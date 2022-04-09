@@ -228,7 +228,7 @@ header .flex-nav {
 
 
 
-@media (max-width:405px){
+@media (max-width:550px){
     header .logo{
         display: block;
         text-align: center;
