@@ -26,12 +26,17 @@ header {
     background-color: black;
     color: white;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     margin-bottom: 40px;
 }
 
-header a {
-    padding: 25px;
+header .logo > img {
+    width: 90px;
+    height: 90px;
+}
+
+header .flex-nav a {
+    padding: 35px 25px;
 }
 
 header a {
@@ -218,5 +223,21 @@ header .flex-nav {
         grid-template-columns: repeat(4,200px);
         grid-template-rows: 1fr;
         grid-row: 5;
+    }
+}
+
+
+
+@media (max-width:405px){
+    header .logo{
+        display: block;
+        text-align: center;
+    }
+
+    header .flex-nav {display: none;}
+
+    header .logo > img {
+        width: 85px;
+        height: 85px;
     }
 }
