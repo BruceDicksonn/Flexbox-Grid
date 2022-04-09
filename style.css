@@ -229,6 +229,15 @@ header .flex-nav {
 
 
 @media (max-width:550px){
+
+    html{
+        scroll-behavior: auto;
+    }
+
+    header {
+        position: relative;
+    }
+
     header .logo{
         display: block;
         text-align: center;
